@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+<center>
+    <font face = "Verdana" size = "5">
+    <div style="color:white"><div style="background-color:#BFF068 ">
+        <form action="{{ url_for('predict')}}" method="post">
+            <h2>Basic Classifier</h2>
+            <h3>What is TV spent?</h3><br><input id="first" name="TV" required="required">
+            <h3>What News Paper?</h3><input id="second" name="newspaper" required="required">
+            <h3>What is Redio?</h3><br><input id="third" name="radio" required="required">
+
+
+            <br><br><button id="sub" type="submit ">Calculate the sales</button>
+            <br>
+
+
+
+
+        </form>
+
+
+
+        <br><br><h3>{{ prediction_text }}<h3>
+    </div>
+
+</body>
+
+</html>
